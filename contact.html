@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kosman advies</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <div class="menu-bg">
+    <div class="logo">KOSMAN ADVIES</div>
+    <label for="show-menu" class="show-menu">KLIK VOOR MENU</label>
+    <input type="checkbox" id="show-menu" role="button">
+    <ul id="menu">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="sub1.html">Sub 1</a>
+      </li>
+      <li>
+        <a href="sub2.html">Sub 2</a>
+      </li>
+      <li>
+        <a href="sub3.html">Sub 3</a>
+      </li>
+      <li>
+        <a href="sub4.html">Sub 4</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="container">
+      <h1 class="brand"><span>Kosman</span> Advies</h1>
+      <!-- <div class="wrapper animated bounceInLeft"> -->
+      <div class="wrapper">
+        <div class="company-info">
+          <h3>Kosman Advies</h3>
+          <ul>
+            <li><i class="fa fa-road"></i> Boschstraat 43</li>
+            <li><i class="fa fa-phone"></i> 040-1234567</li>
+            <li><i class="fa fa-envelope"></i> test@kosman.test</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Email ons</h3>
+          <div class="alert">Je bericht is verzonden</div>
+          <form id="contactForm">
+            <p>
+              <label>Naam</label>
+              <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+              <label>Bedrijf</label>
+              <input type="text" name="company" id="company">
+            </p>
+            <p>
+              <label>Emailadres</label>
+              <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+              <label>Telefoonnummer</label>
+              <input type="text" name="phone" id="phone">
+            </p>
+            <p class="full">
+              <label>Bericht</label>
+              <textarea name="message" rows="4" id="message"></textarea>
+            </p>
+            <p class="full">
+              <button type="submit">Verzend</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>Copyright &copy; kwisoft webontwikkeling 2018</footer>
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
